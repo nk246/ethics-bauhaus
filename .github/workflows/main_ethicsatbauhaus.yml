@@ -56,5 +56,5 @@ jobs:
         with:
           app-name: 'EthicsAtBauhaus'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D828B1EF7A6B4A3F9E36EF038E4D2C89 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_1FF712A7F06C4F09B35C6F8C4BD71307 }}
           package: .
