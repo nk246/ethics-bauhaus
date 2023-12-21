@@ -10,13 +10,6 @@
 
         <label for="question1">So, what's your Question to the Future?</label>
         <input type="text" name="question1" id="question1" onchange="handleQuestionChange(1)" >
-        <!--
-        <label for="question2">Question 2:</label>
-        <input type="text" name="question2" id="question2" onchange="handleQuestionChange(2)">
-
-        <label for="question3">Question 3:</label>
-        <input type="text" name="question3" id="question3" onchange="handleQuestionChange(3)">
-        -->
         <div class="name-location">
         <div class="name">
         <label for="name">What's your Name?</label>

@@ -2,7 +2,6 @@
 <html>
 <head>
     <title>Ethics@Bauhaus Manifesto</title>
-    <!-- Add your CSS and other head elements here -->
 </head>
 <body id="manifesto-page">
     <?php include 'header.php'; ?>
