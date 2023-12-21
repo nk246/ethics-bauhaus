@@ -1,21 +1,26 @@
-header {
-    background-color: black;
-    padding: 20px;
-    color: white;
+@import url('https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Overpass Mono', monospace;
 }
 
-nav {
-    display: flex;
-    justify-content: flex-end;
+
+header {
+    background-color: black;
+    padding: 25px;
+    padding-right: 80px;
+    color: white;
 }
 
 nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    text-align: right;
 }
 
 nav ul li {
+    display: inline-block;
     margin-left: 10px;
 }
 
@@ -27,6 +32,21 @@ nav ul li a {
 }
 
 nav ul li a:hover {
+    background-color: white;
+    color: black;
+}
+
+
+.header-link {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.header-link:hover {
+    padding: 10px 20px;
+    border-radius: 5px;
     background-color: white;
     color: black;
 }

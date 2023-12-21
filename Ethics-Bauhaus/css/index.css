@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Overpass Mono', monospace;
+}
+
+body {
+    height: 100vh;
+    margin: 0 !important;
+    overflow: hidden;
+    overflow-x: hidden;
+    word-wrap: break-word;
+}
+
+.body-container {
+        max-width: 60%;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 150px;
+}
+      
+
+footer {
+    background-color: black;
+    padding: 20px;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    font-size: .8em;
+}
+
+h2 {
+    color: #333333;
+    font-size: 50px;
+    font-family: 'Overpass Mono', monospace;
+    text-align: center;
+}
+
+#currentEntry {
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#question {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#answer {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+#details {
+    font-size: 14px;
+    color: #888888;
+}
+
+
+#manifesto-page html, body {
+  min-height: 100% !important;
+  overflow-y: scroll !important;
+}
+
+/*Main Page*/
+html, body {
+    height: 100%;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  main {
+    flex-grow: 1;
+  }
+  
+  footer {
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+
+
+  .normal-color {
+    background-color: white;
+    color: black;
+    transition: color 0.2s ease;
+    transition: background-color 0.4s ease ;
+}
+
+.alternate-color {
+    background-color: black;
+    color: white;
+    transition: color 0.2s ease;
+    transition: background-color 0.4s ease ;
+}
+
+
+
+
+
+
+.entry {
+    transition: transform 1.5s ease-in-out;
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 50%;
+    left: 25vw;
+    transform: translateY(-50%);
+}
+
+.entry.push-out {
+    transform: translateY(100%);
+}
+
+.entry.push-in {
+    transform: translateY(0%);
+}
+
+
+.answer {
+  font-size: 4em;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  max-width: 50vw;
+  text-align: left;
+}
+
+.question {
+  font-size: 2em;
+  font-weight: 700;
+  text-align: center;
+}
+
+.details {
+  position: absolute;
+  right: 0%;
+  font-size: 1em;
+  text-align: right;
+  
+}
+
+
+
+
+
+/*Manifesto*/
+
+ol {
+    list-style-type: none;
+    counter-reset: item;
+    margin: 0;
+    padding: 0;
+  }
+  
+  ol > li {
+    display: table;
+    counter-increment: item;
+    margin-bottom: 0.6em;
+  }
+  
+  ol > li:before {
+    content: counters(item, ".") " ";
+    display: table-cell;
+    padding-right: 0.3em;
+    font-size: 40px;
+    font-family: 'Overpass Mono', monospace;
+    font-weight: 600;    
+    position: relative;
+    top: 16px;
+  }
+  
+  li ol > li {
+    margin: 1em;
+  }
+  
+  li ol > li:before {
+    content: counters(item, ".") " ";
+    font-size: 20px;
+    font-family: 'Overpass Mono', monospace;
+    font-weight: 600;
+  }
+
+.sub-li:before {
+    position: relative;
+    top: 2px;
+}
+
+.form-page-main {
+  flex-grow: 0.5;
+}
+
+.form-sub-paragraph {
+  margin-bottom: 2em;
+}
+
+#about-main {
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.name-container {
+  margin-top: 5em;
+}
+
+#about-main a {
+  display: flex;
+  align-items: left; 
+  justify-content: left;
+  font-size: 40px;
+  font-weight: 400;
+  text-decoration: none;
+  color: black;
+  margin-top: 0.4em;
+}
+
+#about-main p {
+  display: flex;
+  align-items: left; 
+  justify-content: left;
+  font-size: 40px;
+  font-weight: 400;
+  text-decoration: none;
+  color: black;
+  margin-top: 0.4em;
+}
+
+#about-main a:hover {
+  text-decoration: underline;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+header h3 {
+  margin: 0;
+}
+
+.about-container {
+  position: relative;
+  height: 40px; /* Adjust the height of the container as needed */
+  margin-right: 12px;
+}
+
+.gg-arrow-top-right {
+  box-sizing: border-box;
+  position: absolute;
+  display: block;
+  width: 32px;
+  height: 32px;
+  border-top: 2px solid;
+  transform: scale(var(--ggs, 1.8)) !important;
+  border-right: 2px solid;
+  top: 12px;
+  right: 0;
+}
+
+.gg-arrow-top-right::after {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  width: 56px;
+  height: 8px;
+  background: currentColor;
+  transform: rotate(-45deg);
+  top: 0px;
+  right: -12px;
+}
+
+
+#about-main a:hover .gg-arrow-top-right {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-top: 3px solid;
+  transform: scale(var(--ggs,1));
+  border-right: 3px solid;
+  }
+
+#about-main a:hover .gg-arrow-top-right::after {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  width: 14px;
+  height: 3px;
+  background: currentColor;
+  transform: rotate(-45deg);
+  top: 3px;
+  right: -2.5px;
+  }
+
+
+
+
+
+.quest-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.quest-form input {
+  margin-bottom: .8em;
+  height: 35px;
+  font-size: 1.5em;
+  text-align: center;
+  width: 100%;
+}
+
+.quest-form label {
+  font-size: 2em;
+  text-align: center;
+  font-weight: 700;
+  width: 100%;
+}
+
+ button {
+  height: 35px;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  font-size: 1.5em;
+  font-weight: 700;
+  /*color: white;
+  background-color: black;*/
+}
+
+button:disabled {
+  background-color: -internal-light-dark(rgba(239, 239, 239, 0.3), rgba(19, 1, 1, 0.3));
+  color: -internal-light-dark(rgba(16, 16, 16, 0.3), rgba(255, 255, 255, 0.3));
+  border-color: -internal-light-dark(rgba(118, 118, 118, 0.3), rgba(195, 195, 195, 0.3));
+}
+
+ button:enabled {
+  color: white;
+  background-color: black;
+}
+
+
+.quest-form .name-location {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.quest-form .name, .quest-form .location {
+  width: 60%;
+}
+
+.quest-form #name, .quest-form #location {
+  width: 90%;
+}
+
+.quest-form .location input, .quest-form .location label {
+  position: relative;
+  float: right;
+}
+
+#form-page p {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#processed, #form-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#form-page h2 {
+  margin-top: 0 !important;
+}

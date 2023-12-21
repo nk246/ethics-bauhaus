@@ -1,0 +1,15 @@
+.grayed-out {
+    background-color: #f2f2f2;
+    color: #888888;
+}
+
+
+.header-link {
+    color: white;
+    text-decoration: none;
+}
+
+.header-link:hover {
+    color: lightgrey;
+    
+}
